@@ -1,0 +1,14 @@
+prefix=/home/shb/myworks/srs/ffmpeg/local
+exec_prefix=${prefix}
+libdir=/home/shb/myworks/srs/ffmpeg/local/lib
+includedir=/home/shb/myworks/srs/ffmpeg/local/include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 58.35.100
+Requires: libswresample >= 3.3.100, libavutil >= 56.22.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavcodec -pthread -lm -lz -lfdk-aac -lmp3lame -lm -lspeex -lx264 -pthread -lm
+Libs.private: 
+Cflags: -I${includedir}

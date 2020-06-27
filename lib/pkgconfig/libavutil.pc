@@ -1,0 +1,14 @@
+prefix=/home/shb/myworks/srs/ffmpeg/local
+exec_prefix=${prefix}
+libdir=/home/shb/myworks/srs/ffmpeg/local/lib
+includedir=/home/shb/myworks/srs/ffmpeg/local/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 56.22.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil -pthread -lm
+Libs.private: 
+Cflags: -I${includedir}
